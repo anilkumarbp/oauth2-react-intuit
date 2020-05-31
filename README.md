@@ -1,4 +1,4 @@
-# React OAuth2.0 Intuit 
+# React OAuth2.0 Intuit
 
 ## Overview
 
@@ -8,27 +8,21 @@ This is a `sample` app bootstrapped with [Create React App](https://github.com/f
 
 ### Requirements
 
-- ⚛️ React 
+- ⚛️ React
 - [Node.js](http://nodejs.org) 8 LTS and above
 - [Intuit Developer](https://developer.intuit.com) Account
 
 ### Via Github Repo (Recommended)
 
 ```bash
-$ git clone https://github.com/anilkumarbp/react-oauth2-intuit
+$ git clone https://github.com/anilkumarbp/oauth2-react-intuit
 $ cd react-oauth2-intuit
 $ yarn install
 ```
 
 ## Configuration
 
-Copy the contents from `.env.example` to `.env` within the `root` folder:
-
-```bash
-$ cp .env.example .env
-```
-
-Now Edit the `.env` file to add your:
+Edit the `.env` file to add your:
 
 - **PORT:(optional)** Optional port number for the app to be served
 - **REACT_APP_CLIENT_ID** Enter your client_ID from Intuit Developer Portal
@@ -66,7 +60,7 @@ ONLY when you have `ngrok` setup follow the steps below :
 1. Start ngrok on the root path
 
 ```bash
-$ cd react-oauth2-intuit
+$ cd oauth2-react-intuit
 $ ngrok http 3000 -host-header="localhost:3000"
 ```
 
@@ -79,11 +73,8 @@ $ ngrok http 3000 -host-header="localhost:3000"
 3. Run the App (_in a different terminal from the root path_)
 
 ```bash
-$ cd react-oauth2-intuit
+$ cd oauth2-react-intuit
 $ yarn start
 ```
 
 Open the URL from ngrok which looks like `https://d3d98c1ea00f.ngrok.io/` and voilà !
-
-[ss1]:
-  https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=Intuit-OAuth2.0-Sample-React
