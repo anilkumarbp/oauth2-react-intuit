@@ -9,7 +9,7 @@ This is a `sample` app bootstrapped with [Create React App](https://github.com/f
 ### Requirements
 
 - ⚛️ React 
-- [Node.js](http://nodejs.org) >= 8.0.0
+- [Node.js](http://nodejs.org) 8 LTS and above
 - [Intuit Developer](https://developer.intuit.com) Account
 
 ### Via Github Repo (Recommended)
