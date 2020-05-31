@@ -57,5 +57,39 @@ export const HomeWrapper = Styled.section`
   
     }
   }
+  @media only screen and (max-width: 500px) {
+    >div{
+      height: 100%;
+      width: 100%;  
+      display: flex;
+      font-size: 6px;
+      .content {     
+        width: 20%;
+        height: 30%;
+        padding: 8%;   
+        margin: 5%; 
+        justify-content: left;
+        img{
+          height: 30%;
+          width: 40%;
+          border-radius: 50%;
+        }
+
+        >span:nth-child(2){
+          margin-top: 15px;
+          font-size: 6px;
+          font-weight: bold; 
+        }
+          >strong{
+            padding-right: 10px;
+          }
+
+        >span:not(:nth-child(2)){
+          margin-top: 15px;        
+          white-space: nowrap;
+        }
+      }
+    }
+  }
 }
 `;

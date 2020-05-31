@@ -73,5 +73,17 @@ export const LoginWrapper = Styled.section`
       }
     }
   }
+  @media only screen and (min-width: 500px) and (max-width: 1200px){
+    div:nth-child(1) {     
+      width: 70%;
+      height: 50%;
+    }
+  }
+  @media only screen and (min-width: 1201px) {
+    div:nth-child(1) {     
+      width: 45%;
+      height: 45%;
+    }
+  }
 }
 `;
