@@ -2,8 +2,7 @@
 
 ## Overview
 
-This is a `sample` app built using React and Express Framework to showcase how to Authorize and
-Authenticate using Intuit's OAuth2.0 Client [library](https://www.npmjs.com/package/intuit-oauth).
+This is a `sample` app bootstrapped with [Create React App](https://github.com/facebook/create-react-app) to show how to login using Intuit's [OAuth2.0 Client library](https://www.npmjs.com/package/intuit-oauth).
 
 ## Installation
 
@@ -16,13 +15,14 @@ Authenticate using Intuit's OAuth2.0 Client [library](https://www.npmjs.com/pack
 ### Via Github Repo (Recommended)
 
 ```bash
-$ cd sample/react
+$ git clone https://github.com/anilkumarbp/react-oauth2-intuit
+$ cd react-oauth2-intuit
 $ yarn install
 ```
 
 ## Configuration
 
-Copy the contents from `.env.example` to `.env` within the `sample/react` directory:
+Copy the contents from `.env.example` to `.env` within the `root` folder:
 
 ```bash
 $ cp .env.example .env
@@ -31,9 +31,6 @@ $ cp .env.example .env
 Now Edit the `.env` file to add your:
 
 - **PORT:(optional)** Optional port number for the app to be served
-- **NGROK_ENABLED:(optional)** By default it is set to `false`. If you want to serve the Sample App
-  over HTTPS ( which is mandatory if you want to test this app using \* Production Credentials), set
-  the variable to `true`
 - **REACT_APP_CLIENT_ID** Enter your client_ID from Intuit Developer Portal
 - **REACT_APP_CLIENT_SECRET** Enter your client_Secret from Intuit Developer Portal
 - **REACT_APP_ENVIRONMENT** =sandbox
@@ -69,7 +66,7 @@ ONLY when you have `ngrok` setup follow the steps below :
 1. Start ngrok on the root path
 
 ```bash
-$ cd sample/react
+$ cd react-oauth2-intuit
 $ ngrok http 3000 -host-header="localhost:3000"
 ```
 
@@ -82,7 +79,7 @@ $ ngrok http 3000 -host-header="localhost:3000"
 3. Run the App (_in a different terminal from the root path_)
 
 ```bash
-$ cd sample/react
+$ cd react-oauth2-intuit
 $ yarn start
 ```
 
