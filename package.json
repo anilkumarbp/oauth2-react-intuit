@@ -1,6 +1,9 @@
 {
     "name": "react-oauth2-intuit",
     "version": "1.0.0",
+    "description": "This is a `sample` app bootstrapped with Create React App to login using Intuit's OAuth2.0 Client library",
+    "keywords": [],
+    "main": "src/index.js",
     "private": true,
     "scripts": {
         "start": "concurrently \"cd server && node index.js \" \"react-scripts start\" "
